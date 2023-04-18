@@ -1,0 +1,58 @@
+---
+# Fixed values used in the Hydrogen Model class. File comes pre-filled with defaults.
+# Electrolyser parameters
+elecMaxLoad: 100  # %
+elecReferenceCapacity: 10 # MW
+elecCostReduction: 1.0
+elecEquip: 1.0  # % of CAPEX
+elecInstall: 0.0  # % of CAPEX
+elecLand: 0.0  # % of CAPEX
+AE:
+  elecMinLoad: 20  # %
+  elecOverload: 100 # %. Only used if greater than elecMaxLoad
+  elecOverloadRecharge: 0 # hours between overloading events
+  specCons: 4.5  # kWh/Nm3
+  stackLifetime: 80000  # hours before replacement
+  electrolyserCapex: 1000   # A$/kW
+  electrolyserOandM: 2.5   # % of electrolyser capex
+  waterNeeds: 10 # L/kg
+PEM:
+  elecMinLoad: 10  # %
+  elecOverload: 120 # %. Only used if greater than elecMaxLoad
+  elecOverloadRecharge: 4 # hours between overloading events
+  specCons: 4.7  # kWh/Nm3
+  stackLifetime: 60000  # hours before replacement
+  electrolyserCapex: 1000   # A$/kW
+  electrolyserOandM: 4   #  % of electrolyser capex
+  waterNeeds: 10 # L/kg
+H2VoltoMass: 0.089  # kg/m3
+elecEff: 83  # %
+
+# Degradation
+stackDegradation: 0 # %/yr
+stackDegMax: 0 # %
+solarDegradation: 0 # %/yr
+windDegradation: 0 # %/yr
+
+# Battery parameters
+batteryEfficiency: 85  # %
+battMin: 0.0  # %
+battLifetime: 10 # years
+
+# Costings inputs
+solarCapex: 1120  # A$/kW
+solarOpex: 16990  # A$/MW
+windCapex: 1942   # A$/kW
+windOpex: 25000  # A$/MW
+powerplantReferenceCapacity: 1  # MW
+powerplantCostReduction: 1.0
+powerplantEquip: 1.0  # % of CAPEX
+powerplantInstall: 0.0  # % of CAPEX
+powerplantLand: 0.0  # % of CAPEX
+batteryCapex: {0: 0, 1: 827, 2: 542, 4: 446, 8: 421}  # A$/kWh
+batteryOpex: {0: 0, 1: 4833, 2: 9717, 4: 19239, 8: 39314}  # A$/MW
+batteryReplacement: 100 # % of capital
+electrolyserStackCost: 40   # % of electrolyser capex
+waterCost: 5  # A$/kL
+discountRate: 4  # %
+projectLife: 20  # years
