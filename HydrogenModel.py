@@ -3,6 +3,7 @@ Defines a class HydrogenModel which mimics the HySupply Cost Tool v1.3 Excel mod
 """
 
 import os
+import matplot
 import pandas as pd
 import numpy as np
 import yaml
