@@ -6,6 +6,7 @@ The HySupply analysis tool has been developed to evaluate the cost of generating
 The tool can be used to create a grid-connected or standalone model based on a solar, wind or hybrid generator. There is also the option to add battery storage, and sell surplus generation to the grid. The key inputs are defined when creating the object though other variables such as the costs and electrolyser operating parameters can be changed in the config file.
 
 ## Installation
+The key for installation 
 
 Download and unzip the folder. Running the model requires python 3. Other package requirements are listed in the requirements.txt.
 
